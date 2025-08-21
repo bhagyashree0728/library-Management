@@ -1,0 +1,30 @@
+# Ignore Git metadata
+.git
+.gitignore
+
+# Node/Editor/OS files
+node_modules
+**/.DS_Store
+**/Thumbs.db
+.idea
+.vscode
+
+# Maven/Build outputs
+/target/
+**/target/
+
+# Logs and temp
+**/*.log
+**/tmp/
+**/temp/
+
+# IDE project files
+*.iml
+
+# Docker local
+Dockerfile*
+!.dockerignore
+
+# Secrets (do not include real keys)
+.env
+.env.*
