@@ -55,6 +55,7 @@
             <a class="navbar-brand" href="#">Dashboard</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="<c:url value='/books'/>">Books</a>
+                <a class="nav-link" href="<c:url value='/ai/chat'/>">🤖 AI Chat</a>
                 <a class="nav-link" href="<c:url value='/logout'/>">Logout</a>
             </div>
         </div>
@@ -104,6 +105,27 @@
                                     <h5>About the Library</h5>
                                     <p>Our library system helps you manage books, users, and borrowing efficiently. Analyze trends and make data-driven decisions with our dashboard tools.</p>
                                 </div>
+                                <div class="mt-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6 class="mb-0">🤖 AI-Powered Features</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6>Book Summaries</h6>
+                                                    <p class="text-muted small">Generate AI-powered book summaries and insights</p>
+                                                    <a href="<c:url value='/books'/>" class="btn btn-sm btn-outline-primary">Try AI Summary</a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6>Smart Recommendations</h6>
+                                                    <p class="text-muted small">Get personalized book suggestions based on interests</p>
+                                                    <a href="<c:url value='/books'/>" class="btn btn-sm btn-outline-info">Get AI Recs</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </c:when>
                             <c:otherwise>
                                 <div class="dashboard-stats justify-content-center">
@@ -127,6 +149,27 @@
                                 <div class="mt-4 text-center">
                                     <h5>About the Library</h5>
                                     <p>Discover, borrow, and enjoy books. Your reading journey starts here!</p>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6 class="mb-0">🤖 AI-Powered Features</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6>Book Summaries</h6>
+                                                    <p class="text-muted small">Get AI-generated summaries before borrowing</p>
+                                                    <a href="<c:url value='/books'/>" class="btn btn-sm btn-outline-primary">Try AI Summary</a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6>Personalized Recs</h6>
+                                                    <p class="text-muted small">Discover books tailored to your interests</p>
+                                                    <a href="<c:url value='/books'/>" class="btn btn-sm btn-outline-info">Get AI Recs</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </c:otherwise>
                         </c:choose>
